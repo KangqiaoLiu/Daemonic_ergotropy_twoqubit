@@ -1,0 +1,21 @@
+{
+  "hash_algorithm": "sha256",
+  "result_files": {
+    "Results/aligned_diagonal_projective_regions.npz": "a3c9d30f4c6bd9ddaa2a1b286fd480a7f6c788e7647c8fdec07e3d133df17f23",
+    "Results/closed_form_random_axis_validation.csv": "3ebcf9a06416611cf115e890314aceca20f002fe4784880cd421eaa422f2a901",
+    "Results/closed_form_validation_summary.json": "bdd351116ecec2cbc488f729282746bc84e62754e548dd8a2af54c8ce8e97e9c",
+    "Results/numerical_settings.json": "e2df3eac2b2b6b6178ef373aea508a1417dcab07038c4ca6ddfc7e832ad4d403",
+    "Results/numerical_summary.json": "9b8b176af35ec82c4f5c8384ed8d2f38652885568db61e43e9c4b0a0c4fa3e26",
+    "Results/pure_state_concurrence_gain_closed_form.csv": "ff890c47a093425e88472032f5dd23d87fb745452cc56869c6d6129004605244",
+    "Results/pure_state_projective_identity.csv": "5e2b89695eb07b631db137d2758ef2a6d88af47bae7bd2c84329b9613cf4bed3",
+    "Results/random_mixed_state_povm_equality.csv": "d0cedd873eb6897bbf46ed5a68618e1b08fc13c12109660f84be0c0e9c29830b",
+    "Results/visibility_gain_closed_form.csv": "4a3df47f9e6c9ae3813e8f707dc86e9b73cf6bad07243cbf27317d775264e3ea",
+    "Results/werner_line_projective_optimum.csv": "6986d552e962596d4a4c8c8718e586634e449148110c38e10c4080408949a564"
+  },
+  "figure_files": {
+    "Figures/figure1.png": "07f7d14e7eb76d1111d145669f7d6639d07ab1e54ca4b9ba3521af755086cbb3",
+    "Figures/figure2.png": "fe8dfce7fb4f90e9c517c0f8e36433abd7fdfafcd5e5c64f6012ec2e367b62aa",
+    "Figures/figure3.png": "305c61a6e45c981cdcc5e6546bff34acd5ec67c21c8638f42a78eaa32445b483",
+    "Figures/figure4.png": "f79dae63333061e634fc2147e54a508be97c1c8a9d104797ec37bdc91959ad64"
+  }
+}

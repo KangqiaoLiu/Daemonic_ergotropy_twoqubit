@@ -1,0 +1,7 @@
+{
+  "seed": 314159,
+  "n_states": 80,
+  "n_random_axes_per_state": 20000,
+  "largest_closed_minus_sampled": 0.00013966383389751869,
+  "largest_sampled_minus_closed": -4.2115073028980987e-07
+}
