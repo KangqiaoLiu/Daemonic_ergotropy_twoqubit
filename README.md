@@ -1,30 +1,35 @@
 # Two-Qubit Daemonic Ergotropy
 
-This repository contains Python code and numerical outputs for reproducing the
-two-qubit daemonic-ergotropy calculations.
+Reproducibility package for analytical and numerical calculations of two-qubit daemonic ergotropy.
 
-## Layout
+The repository is organized so that the closed-form calculations, numerical validation, generated data, and plotting steps can be inspected separately. It is intended as a compact research artifact rather than a general-purpose software package.
 
-- `Code/closed_form_daemonic_ergotropy.py`: closed-form functions for the
-  concurrence and visibility calculations.
-- `Code/twoqubit_daemonic_ergotropy_numerics.py`: full numerical validation for
-  analytic families, random pure states, and random Hilbert-Schmidt mixed
-  states.
-- `Code/plot_closed_form_figure.py`: regenerates the closed-form figure and its
-  associated CSV outputs.
-- `Code/plot_figures.py`: regenerates the remaining figure files
-  from existing files in `Results/`.
-- `Code/figure_io.py`: shared output paths, plotting style, and deterministic
-  hash helpers.
-- `Results/`: generated CSV, NPZ, and JSON outputs.
-- `Figures/`: generated figure PNG files.
+<p align="center">
+  <img src="Figures/figure1.png" alt="Representative result from the two-qubit daemonic ergotropy calculations" width="760">
+</p>
 
-The plotting scripts write figure PNG files to `Figures/` when they are run.
+## What is reproduced
+
+- closed-form concurrence and visibility calculations for the analytic families studied in the project;
+- numerical validation on analytic families, random pure states, and random Hilbert-Schmidt mixed states;
+- deterministic figure generation from the stored numerical outputs;
+- machine-readable CSV, NPZ, and JSON result files used by the plotting scripts.
+
+## Repository layout
+
+| Path | Purpose |
+|---|---|
+| `Code/closed_form_daemonic_ergotropy.py` | Closed-form functions for concurrence and visibility calculations |
+| `Code/twoqubit_daemonic_ergotropy_numerics.py` | Numerical validation for analytic families and random states |
+| `Code/plot_closed_form_figure.py` | Regenerates the closed-form figure and associated CSV outputs |
+| `Code/plot_figures.py` | Regenerates the remaining figures from stored results |
+| `Code/figure_io.py` | Shared paths, plotting conventions, and deterministic output helpers |
+| `Results/` | Generated CSV, NPZ, and JSON outputs |
+| `Figures/` | Generated publication figures |
 
 ## Environment
 
-The pinned Python packages are listed in `Code/requirements.txt`. From the
-repository root:
+The Python dependencies are pinned in `Code/requirements.txt`.
 
 ```bash
 python3 -m venv .venv
@@ -32,15 +37,15 @@ python3 -m venv .venv
 python -m pip install -r Code/requirements.txt
 ```
 
-## Regeneration
+## Reproduce the calculations
 
-Regenerate the closed-form figure and visibility CSV:
+Regenerate the closed-form figure and visibility data:
 
 ```bash
 python Code/plot_closed_form_figure.py
 ```
 
-Regenerate figure files from existing numerical outputs:
+Regenerate the remaining figure files from the stored numerical outputs:
 
 ```bash
 python Code/plot_figures.py
@@ -51,3 +56,11 @@ Run the full numerical validation:
 ```bash
 python Code/twoqubit_daemonic_ergotropy_numerics.py
 ```
+
+The plotting scripts write publication figures to `Figures/`. The numerical scripts keep the intermediate outputs in `Results/` so that the analysis can be inspected without rerunning every calculation.
+
+## Research context
+
+This repository is part of my work on quantum information thermodynamics and resource extraction from correlated quantum systems.
+
+For the broader research context, publications, and current work, see [kangqiaoliu.github.io](https://kangqiaoliu.github.io/).
